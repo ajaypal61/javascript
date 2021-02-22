@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(247, 230, 230) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="rrtt">your name </label>
+        <input type="text" id="ice">
+        <br>
+        <label>choose an ice cream flavor 😎
+            <select name="iceCreams" id="iceCreams" onchange="selectElement()">
+                <option selected>Select one...</option>
+                <option value="chocolate">chocolate</option>
+                <option value="sardine">sardine</option>
+                <option value="vanilla">vanilla</option>
+            </select>
+        </label>
+
+        <br>
+        <div id="result"></div>
+    </div>
+    <script>
+        const selectElement = () => {
+            const inputChange = document.getElementById('ice').value;
+            const iceCreams = document.getElementById('iceCreams').value;
+            const result = document.getElementById('result');
+
+            result.innerHTML = `mr ${inputChange} and ${iceCreams} ice-cream flavour`
+
+            console.log(`${inputChange} and ${iceCreams}`);
+        }
+    </script>
+</body>
+
+</html>

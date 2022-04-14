@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <script src="challenge.js"></script>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <p>Click this Button</p>
+    <button onclick="myfunction()">TRY IT</button>
+    <p id="demo"></p>
+    <p id="time"></p>
+
+
+
+    <!-- // set timeout  -->
+
+    <!-- <div class="main-div">
+        <div>
+            <p>want to know my name</p>
+            <p id="showyname"></p>
+            <br>
+            <button id="btn">click me</button>
+        </div>
+    </div> -->
+
+
+
+    <!-- clear timeout  -->
+
+    <!-- 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium </p>
+
+    <button onclick="myvar =setTimeout(myfunction, 1000)">try it</button>
+    <button onclick="clearTimeout(myvar)">stop it</button> -->
+
+
+
+    <!-- setInterval -->
+
+
+    <!-- 
+    <div class="main-div">
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, sed.</p>
+            <br>
+            <button id="btn">click here</button>
+        </div>
+    </div>
+
+ -->
+
+
+
+    <!-- // clearInterval  -->
+
+
+
+    <!-- 
+
+    <div class="main-div">
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, sed.</p>
+            <br>
+            <button id="btn">click here</button>
+            <button id="btn1">stop</button>
+        </div>
+    </div> -->
+
+    <script>
+
+
+        // function myfunction() {
+        //     var d = new Date();
+        //     // d.setHours(0);
+        //     document.getElementById("demo").innerHTML = d;
+        // }
+
+
+
+
+
+
+
+
+        // set timeout
+
+
+        // const myname = document.querySelector('#showyname');
+        // const btn = document.querySelector('#btn');
+        // const showyname = () => {
+        //     myname.innerHTML = "Loading...."
+        //     setTimeout(() => {
+        //         myname.innerHTML = "ajay rathore"
+        //     }, 1000)
+        // }
+        // btn.addEventListener('click', showyname);
+
+
+
+
+        // <!-- clear timeout  -->
+
+
+
+        // function myfunction() {
+        //     alert('hello');
+
+        // }
+
+
+
+
+
+
+
+
+
+        // <!-- setInterval -->
+
+
+
+
+
+
+        // const stopnum = document.querySelector('p');
+        // const btn = document.querySelector('#btn');
+        // let num = 0;
+
+        // const showmynum = () => {
+        //     stopnum.innerHTML = "Loading...."
+
+
+        //     setInterval(() => {
+        //         stopnum.innerHTML = `${num}`;
+        //         num++;
+        //     }, 1000)
+        // }
+        // btn.addEventListener('click', showmynum);
+
+
+
+        //  <!-- // clearInterval  -->
+
+
+
+
+
+        // const stopnum = document.querySelector('p');
+        // const btn = document.querySelector('#btn');
+        // const stopinterval = document.querySelector('#btn1');
+        // let timeref
+        // let num = 0;
+
+        // const showmyname = () => {
+        //     stopnum.innerHTML = "loading...."
+
+
+        //     timeref = setInterval(() => {
+        //         stopnum.innerHTML = `${num}`;
+        //         num++;
+        //     }, 1000);
+        // }
+
+        // btn.addEventListener('click', showmyname);
+        // stopinterval.addEventListener('click', () => {
+        //     clearInterval(timeref);
+        // })
+
+
+
+
+
+
+
+
+
+
+        // var t = new Date().toLocaleTimeString();
+        // document.getElementById("time").innerHTML = t;
+
+
+        // var d = new Date().toLocaleDateString();
+        // document.getElementById("demo").innerHTML = d;
+
+
+
+
+        // time ko chalane ke liye use krte hai
+
+        (function () {
+            setInterval(() => {
+                var t = new Date().toLocaleTimeString();
+                document.getElementById("time").innerHTML = t;
+            }, 1000)
+        })();
+
+
+    </script>
+
+
+</body>
+
+</html>

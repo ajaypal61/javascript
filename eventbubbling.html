@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parentdiv {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+
+        .childdiv {
+            width: 60px;
+            height: 50px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- jab do alert hote hai to child par click krne par parent bhi show hota hai  -->
+
+
+
+
+
+    <div class="parentdiv" id="parentid">
+        <div class="childdiv" id="childid"></div>
+    </div>
+
+
+    <script>
+        const parentid = document.getElementById('parentid');
+        const childid = document.getElementById('childid');
+
+        const parentcall = () => {
+            alert('parent div');
+        }
+
+
+        const childcall = () => {
+            alert('child div');
+            event.stopPropagation();
+        }
+
+        parentid.addEventListener('click', parentcall);
+        childid.addEventListener('click', childcall);
+
+
+    </script>
+</body>
+
+</html>

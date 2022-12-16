@@ -147,6 +147,15 @@
 
         </div>
     </div>
+
+    <p id="myp" onmousedown="mouseDown()" onmouseup="mouseUp()">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Amet consequuntur quasi praesentium earum! Fugit explicabo delectus nobis exercitationem, sapiente tempora
+        placeat laboriosam! Voluptate corporis nostrum enim placeat eaque corrupti dolores officia porro exercitationem
+        fugiat atque aut modi animi quae odit voluptatem quos iste cupiditate ducimus, sunt numquam sit reiciendis
+        praesentium! Voluptatum rerum dolorum nemo? Voluptatum tempora numquam autem odit id.</p>
+
+
+
     <script>
         // 2nd way of writing function 
         const callingfunction = () => {
@@ -187,6 +196,24 @@
         //     console.log(event.type);
         // }
         // fourtway.addEventListener('click', checkevent);
+
+
+
+
+        // mouse events###########################################  
+
+
+        function mouseDown() {
+            document.getElementById('myp').style.color='red';
+        }
+
+        function mouseUp(){
+            document.getElementById('myp').style.color='green';
+        }
+
+
+
+
 
         const menter = document.getElementById('box');
 

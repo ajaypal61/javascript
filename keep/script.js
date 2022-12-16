@@ -36,7 +36,7 @@ const addNewNote = (text = "") => {
   const mainDiv = note.querySelector(".main");
   const textArea = note.querySelector("textarea");
 
-  // deleting the node
+  // // deleting the node
   delButton.addEventListener("click", () => {
     note.remove();
     updateLSData();

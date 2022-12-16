@@ -1,4 +1,6 @@
 
+
+
 // 1.  values and variables
 
 // var name number(1,2...) se start nhi hota
@@ -22,17 +24,17 @@
 
 // 1. undefined
 // 2. boolean true,false
-// 3. number 1,2..
-// 4. string name
+// 3. number     1,2..
+// 4. string     name
 // 5. bigInt
 // 6. symbol
 
 
 
-// var myname = 'ajay rathore';
+// var myName = 'ajay rathore';
 
 // console.log(typeof(myname));
-
+// console.log(myName);
 
 
 
@@ -87,11 +89,12 @@
 // 4. comparison operators
 // ==, !=, >,<
 
-// != not equal hota hai matlb dono  same nhi hai
+// != not equal hota hai matlb dono same nhi hai
 
 // var a = 5;
 // var b = 7;
 // console.log(a != b);
+// console.log(a >= b);
 
 
 
@@ -114,7 +117,7 @@
 
 // console.log(!((a > b) || ( b < 0)));
 // console.log(!true);
-// ye ulta kar deta hai true false or false ko true
+// ye ulta kar deta hai true ko false or false ko true
 
 
 // string operators
@@ -152,6 +155,7 @@
 // }
 
 
+
 // var year = 2020;
 
 // if (year % 4 === 0) {
@@ -177,7 +181,7 @@
 // falsy == 0,"",undefined , null , nan , false
 
 
-// if (0) {
+// if (score=0) {
 //     console.log("we loss the game");
 // } else {
 //     console.log("we won the game");
@@ -190,7 +194,7 @@
 
 
 // var age = 19;
-// console.log((age > 18)? "you can vote" : "you can`t vote ");
+// console.log((age >= 18)? "you can vote" : "you can`t vote ");
 
 
 
@@ -237,6 +241,7 @@
 // }
 
 
+
 // ye block scope hota hai
 
 
@@ -254,7 +259,7 @@
 // }while (num<10)
 
 
-// while loop and do while loop me ye anater hota hai ki while loop condison pahle hi dekh leta or do while loop pahle nhi dekhta hai
+// while loop and do while loop me ye anatar hota hai ki while loop condison pahle hi dekh leta or do while loop pahle nhi dekhta hai
 
 
 
@@ -269,9 +274,11 @@
 
 // }
 
-// for (var num = 0; num < 10;num++){
+// for (var num = 0; num <= 10;num++){
 //     console.log(num)
 // }
+
+
 
 
 
@@ -305,7 +312,7 @@
 
 
 // function sum() {
-//     var a = 10; b = 20;
+//     var a = 10, b = 20;
 //     var total = a + b;
 //     console.log(total);
 // }
@@ -511,7 +518,7 @@
 
 // const sum = () =>  `the sum of the two number is ${(a=5)+(b=6)}`
 
-// console.log(sum(4,6));
+// console.log(sum());
 
 
 
@@ -537,7 +544,7 @@
 
 // var myfrnd = ['ajay', 'vikash', 'sonu', 'pankaj', 'mukesh'];
 // // console.log(myfrnd[myfrnd.length-1]);
-// console.log(myfrnd[7]);
+// console.log(myfrnd[4]);
 
 
 
@@ -650,10 +657,10 @@
 
 // // prices < 400
 
-// const finde = prices.find((currval) => {
+// const findel = prices.find((currval) => {
 //     return currval < 400;
 // });
-//  console.log(finde);
+//  console.log(findel);
 
 
 //  console.log( prices.find((currval) => currval<400));
@@ -691,6 +698,7 @@
 // });
 // console.log(newprice);
 
+// console.log( prices.filter((elem,index)=> elem<400));
 
 
 
@@ -774,6 +782,7 @@
 
 
 
+
 // ############################## prototype splice
 
 
@@ -846,7 +855,7 @@
 
 // const array1 = [1, 4, 9, 16, 25];
 
-// num>9
+// // num>9
 
 // let newarr = array1.map((curelem, index, arr) => {
 //     return curelem > 9;
@@ -971,10 +980,10 @@
 
 
 // Escape character
-// '' code ke andar ""code use nhi kr sakte
-// '' code ke andar ''code use kr sakte
-// "" code ke andar '' code use nhi kr sakte
-// "" code ke andar "" code use kr sakte
+// '' code ke andar ""code use kr sakte hai
+// '' code ke andar ''code use nhi kr sakte hai
+// "" code ke andar '' code use kr sakte hai
+// "" code ke andar "" code use nhi kr sakte hai
 
 
 
@@ -996,7 +1005,7 @@
 
 
 
-// const mybio ='I am ajay rathore'
+// const mybio ='I am ajay rathore';
 // let sdata = mybio.search('ajay');
 // console.log(sdata);
 
@@ -1013,7 +1022,7 @@
 
 
 // slice
-// slice (start,end) ye start ke point ko ginta but end ke point nhi ginta
+// slice (start,end) ye start ke point ko ginta hai but end ke point nhi ginta
 
 
 
@@ -1141,6 +1150,7 @@
 
 
 // console.log(name1.trim());
+// console.log(name1);
 
 
 
@@ -1233,7 +1243,7 @@
 
 // var d = new Date('october 16,2014 11:14:00');
 
-// console.log(d);
+// console.log(d.toLocaleString());
 
 
 
@@ -1388,6 +1398,8 @@
 // let num = 10.574
 // console.log(Math.round(num));
 
+// const a = "ajay";
+// console.log(a);
 
 
 // const sa = 17.5000;
@@ -1647,6 +1659,10 @@
 
 
 
+// ##################################################################################################################
+
+
+
 
 // destructuring in ES6
 
@@ -1656,7 +1672,7 @@
 
 // const mybiodata = ['ajay', 'rathore', 23];
 
-// let [myfnme, mylname, myage] = mybiodata;
+// let [myfname, mylname, myage] = mybiodata;
 // console.log(myage);
 
 
@@ -1665,7 +1681,7 @@
 
 // const mybiodata = ['ajay', 'rathore', 23];
 
-// let [myfnme, mylname, myage,myclass="12"] = mybiodata;
+// let [myfname, mylname, myage,myclass="12"] = mybiodata;
 // console.log(myclass);
 
 
@@ -1728,7 +1744,16 @@
 
 
 
+// ECMAScript 2018/ES9 
 
+
+
+
+// const per = {name : 'ajay',age: 55,degree:'b.sc'};
+// const sper ={...per};
+
+// console.log(per);
+// console.log(sper);
 
 
 // #############################################################################################
@@ -1912,6 +1937,69 @@
 
 // callback hall
 
+
+
+
+
+
+
+// json in javascript ###############################################################################################################################
+
+
+
+
+
+// javascript object ko json me change krna ho to 
+
+// var myobj = {key1:'ajay', key2:'rathore'};
+
+// var object_as_string = JSON.stringify(myobj);
+
+// console.log(object_as_string);
+
+
+
+
+
+// ab agr json ko javascript object me change krna ho to 
+
+
+
+// var object_as_string_as_object = JSON.parse(object_as_string);
+
+// console.log(object_as_string_as_object);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ###############################################################################################################################################################################################################
+
+
+// 1. fetch api 
+// 2. promises
+// 3. async-await 
+// 4. error handling in js 
+
+
+
+// in sab ka project banaya hua hai 
 
 
 

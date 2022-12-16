@@ -59,7 +59,6 @@
 // console.log(mytweet.length);
 // let mytweet1 = mytweet.slice(0, 280);
 // console.log(mytweet1);
-// console.log(mytweet1.length);
     
 
 

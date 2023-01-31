@@ -16,10 +16,10 @@
 </head>
 
 <body>
-    <!-- <p>Click this Button</p>
+    <p>Click this Button</p>
     <button onclick="myfunction()">TRY IT</button>
     <p id="demo"></p>
-    <p id="time"></p> -->
+    <p id="time"></p>
 
 
 
@@ -51,7 +51,7 @@
     <!-- setInterval -->
 
 
-    <!-- 
+<!--     
     <div class="main-div">
         <div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, sed.</p>
@@ -59,8 +59,8 @@
             <button id="btn">click here</button>
         </div>
     </div>
-
  -->
+
 
 
 
@@ -68,7 +68,7 @@
 
 
 
-    <!-- 
+    
 
     <div class="main-div">
         <div>
@@ -77,16 +77,16 @@
             <button id="btn">click here</button>
             <button id="btn1">stop</button>
         </div>
-    </div> -->
+    </div>
 
     <script>
 
 
-        // function myfunction() {
-        //     var d = new Date();
-        //     // d.setHours(0);
-        //     document.getElementById("demo").innerHTML = d;
-        // }
+        function myfunction() {
+            var d = new Date();
+            d.setHours(0);
+            document.getElementById("demo").innerHTML = d;
+        }
 
 
 
@@ -159,26 +159,26 @@
 
 
 
-        // const stopnum = document.querySelector('p');
-        // const btn = document.querySelector('#btn');
-        // const stopinterval = document.querySelector('#btn1');
-        // let timeref
-        // let num = 0;
+        const stopnum = document.querySelector('p');
+        const btn = document.querySelector('#btn');
+        const stopinterval = document.querySelector('#btn1');
+        let timeref
+        let num = 0;
 
-        // const showmyname = () => {
-        //     stopnum.innerHTML = "loading...."
+        const showmyname = () => {
+            stopnum.innerHTML = "loading...."
 
 
-        //     timeref = setInterval(() => {
-        //         stopnum.innerHTML = `${num}`;
-        //         num++;
-        //     }, 1000);
-        // }
+            timeref = setInterval(() => {
+                stopnum.innerHTML = `${num}`;
+                num++;
+            }, 1000);
+        }
 
-        // btn.addEventListener('click', showmyname);
-        // stopinterval.addEventListener('click', () => {
-        //     clearInterval(timeref);
-        // })
+        btn.addEventListener('click', showmyname);
+        stopinterval.addEventListener('click', () => {
+            clearInterval(timeref);
+        })
 
 
 

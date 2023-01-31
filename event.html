@@ -96,6 +96,7 @@
     <div class="content">
         <h1>Event in java</h1>
         <div class="button_container">
+            <!-- first way of writing event  -->
             <div class="button_su">
                 <span class="su_button_circle"></span>
                 <a href="#" class="button_su_inner" onclick="alert('i am')">
@@ -106,6 +107,8 @@
             <div>
                 <button onclick="alert('ajay')">click me</button>
             </div>
+
+            <!-- second way of writing event  -->
 
             <div class="button_su">
                 <span class="su_button_circle"></span>
@@ -119,6 +122,10 @@
                 <button onclick="aj()">click me 1</button>
             </div>
 
+
+            <!-- 3rd way of writing event  -->
+
+
             <div class="button_su">
                 <span class="su_button_circle"></span>
                 <a href="#" class="button_su_inner">
@@ -130,6 +137,9 @@
             <div>
                 <button id="thir3">click me 2</button>
             </div>
+
+
+            <!-- 4th way of writing event  -->
 
             <div class="button_su">
                 <span class="su_button_circle"></span>
@@ -170,7 +180,7 @@
         // 3nd way of writing function
 
         const thirdway = document.getElementById('thirdway');
-        thirdway.onclick = function () {
+        thirdway.onclick = ()=> {
             alert('most common way again')
         }
 

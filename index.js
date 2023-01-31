@@ -414,6 +414,17 @@
 
 // ECMAScript 2015 also know as ES6
 
+// 1. let and const 
+// 2. template strings 
+// 3. arrow function 
+// 4. destructuring 
+// 5. object proptiy 
+// 6. default arguments 
+// 7. arrays in ES6 
+// 8. new Node. methods 
+// 9. new global methods 
+
+
 
 // 1. LET VS CONST VS VAR
 
@@ -1237,9 +1248,16 @@
 
 
 
+// var d = new Date();
+
+// console.log(d.toString());
+
+
+
+
 
 // new date(datestring)
-
+ 
 
 // var d = new Date('october 16,2014 11:14:00');
 
@@ -1975,9 +1993,29 @@
 
 
 
+// ########################################################################################################################################################################################################################################################################
+
+// modules ES6 modern javascript 
+
+
+// modules = javascript mai ek file me joke data save hota hai vo dusri file me use kr sakte hai  
+// 1. jis file ka data hame chahiye usme export use krte hai 
+// 2 . jis file me dusri file ke data use krne hai usme import use krte hai 
 
 
 
+
+// promise #########################
+
+// ES6 
+
+            //        promise 
+            //     /         /
+            //    /         /
+            // resolve()   reject()
+            //    /            /
+            //    /            /
+            //    then()      catch()
 
 
 
